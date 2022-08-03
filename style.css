@@ -1,37 +1,73 @@
-/* h1 {
-    color: orange;
-    border: 1px solid black;
-    display: inline;
-} */
+/* Box- model */
+/* Flexbox */
 
-/* selection by tag */
-div {
-    /* border: 1px solid red; */
-    color: white;
+/* universal selector */
+* {
+    margin: 0;
+    /* this Box-sizing makes it easier to maintain the same with or height if given */
+    box-sizing: border-box;
 }
 
-/* selection by classes */
-.left-division {
-    vertical-align: top;
-    display: inline-block;
-    width: 65%;
-    height: 500px;
-    background: skyblue;
-
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-.right-division {
-    vertical-align: top;
-    height: 250px;
-    width: 30%;
-    display: inline-block;
-    background: tomato;
-
-
-}
-
-.parent-container {
+.parent-div {
     /* border: 3px solid black; */
-    width: 70%;
-    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+
+    /* this is added by default */
+    flex-direction: row;
+}
+
+.left-div {
+    padding: 20px;
+    background: #d9d9d9;
+    height: 400px;
+    width: 50%;
+    /* margin-left: 20px; */
+    /* padding-left: 30px; */
+    /* top right bottom left ---clockwise direction */
+    /* padding: 30px 30px 30px 30px; */
+}
+
+.right-div {
+    /* background: #ff6347; */
+    background: url(./images/img1.png);
+    background-size: cover;
+    background-position: bottom left;
+    height: 400px;
+    width: 50%;
+}
+
+.smart-line {
+    background: #FF6347;
+    height: 16px;
+    width: 224px;
+}
+
+span {
+    color: tomato;
+}
+
+.header-logotext {
+    margin-bottom: 20px;
+}
+
+.header-headingtext {
+    margin-bottom: 20px;
+}
+
+.header-longtext {
+    margin-bottom: 35px;
+}
+
+.link-holder {
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    /* top and bottom ---- left and right */
+    padding: 20px 0;
 }
