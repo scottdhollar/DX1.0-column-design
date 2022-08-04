@@ -34,11 +34,13 @@ body {
 
 .right-div {
     /* background: #ff6347; */
-    background: url(./images/img1.png);
+    background: url(./images/image1.jpg);
     background-size: cover;
     background-position: bottom left;
     height: 400px;
     width: 50%;
+    position: relative;
+    display: flex;
 }
 
 .smart-line {
@@ -70,4 +72,104 @@ span {
     color: white;
     /* top and bottom ---- left and right */
     padding: 20px 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/* background overlay */
+.bg-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 99, 71, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* positioning ---Relative position [absolute] */
+
+/* Second section */
+.second-section {
+    /* margin-top: 40px; */
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.secondsection-left {
+    width: 350px;
+    height: 360px;
+    background: #D9D9D9;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.secondsection-right {
+    margin-left: 10px;
+    width: 380px;
+    height: 420px;
+    background: tomato;
+}
+
+/* 
+h4 {
+    text-align: center;
+} */
+
+p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* image reset */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Third section */
+.thirdsection {
+    background: #D9D9D9;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.thirdsection-left,
+.thirdsection-right {
+    width: 400px;
+    height: 420px;
+}
+
+.thirdsection-left {
+    background: skyblue;
+}
+
+.thirdsection-right {
+    background: #FF6347;
+    padding: 30px 25px;
+
+}
+
+/* footer section */
+.footer {
+    background: #FF6347;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iconholder {
+    color: white;
+    /* font-size: 40px; */
+}
+
+.icon-method2 {
+    border: 3px solid black;
+    width: 200px;
 }
