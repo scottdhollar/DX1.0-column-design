@@ -99,8 +99,8 @@ span {
 }
 
 .secondsection-left {
-    width: 350px;
-    height: 360px;
+    width: 300px;
+    height: 400px;
     background: #D9D9D9;
     padding: 40px 25px;
     text-align: center;
@@ -108,8 +108,8 @@ span {
 
 .secondsection-right {
     margin-left: 10px;
-    width: 380px;
-    height: 420px;
+    width: 320px;
+    height: 460px;
     background: tomato;
 }
 
@@ -140,8 +140,8 @@ img {
 
 .thirdsection-left,
 .thirdsection-right {
-    width: 400px;
-    height: 420px;
+    width: 300px;
+    height: 430px;
 }
 
 .thirdsection-left {
@@ -160,6 +160,7 @@ img {
     padding: 20px 0;
     color: white;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -172,4 +173,84 @@ img {
 .icon-method2 {
     border: 3px solid black;
     width: 200px;
+}
+
+.method2-iconholder svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+
+/* Monile design --- using media queries */
+
+@media screen and (max-width:900px) {
+
+    .right-div,
+    .left-div {
+        height: 530px;
+    }
+
+    .left-div {
+        width: 60%;
+    }
+
+    .right-div {
+        width: 40%;
+    }
+
+    .header-headingtext {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .smart-line {
+        width: 200px;
+    }
+
+    .link-holder {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 25px;
+        padding-left: 40px;
+    }
+
+    .link-holder h4 {
+        margin-bottom: 20px;
+    }
+
+
+    /*  second section*/
+    .second-section {
+        flex-direction: column;
+    }
+
+    .secondsection-right {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* third section */
+    .thirdsection {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .thirdsection-right {
+        margin-bottom: 30px;
+    }
+
+    /*  footer section*/
+    .footer {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
 }
