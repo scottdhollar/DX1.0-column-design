@@ -1,174 +1,143 @@
-/* Box- model */
-/* Flexbox */
+/* ==== Common Fix starts here==== */
 
-/* universal selector */
 * {
+    padding: 0;
     margin: 0;
-    /* this Box-sizing makes it easier to maintain the same with or height if given */
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-
-.parent-div {
-    /* border: 3px solid black; */
-    display: flex;
-    /* flex-direction: column; */
-
-    /* this is added by default */
-    flex-direction: row;
-
-    /* margin-left: auto;
-    margin-right: auto; */
-
-    margin: 0 auto;
-    max-width: 1500px;
-}
-
-.left-div {
-    padding: 20px;
-    background: #d9d9d9;
-    height: 400px;
-    width: 50%;
-    /* margin-left: 20px; */
-    /* padding-left: 30px; */
-    /* top right bottom left ---clockwise direction */
-    /* padding: 30px 30px 30px 30px; */
-}
-
-.right-div {
-    /* background: #ff6347; */
-    background: url(./images/image1.jpg);
-    background-size: cover;
-    background-position: bottom left;
-    height: 400px;
-    width: 50%;
-    position: relative;
-    display: flex;
-}
-
-.smart-line {
-    background: #FF6347;
-    height: 16px;
-    width: 224px;
-}
-
-span {
-    color: tomato;
-}
-
-.header-logotext {
-    margin-bottom: 20px;
-}
-
-.header-headingtext {
-    margin-bottom: 20px;
-}
-
-.header-longtext {
-    margin-bottom: 35px;
-}
-
-.link-holder {
-    /* border: 3px solid black; */
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    /* top and bottom ---- left and right */
-    padding: 20px 0;
-    width: 100%;
-    z-index: 3;
-}
-
-/* background overlay */
-.bg-overlay {
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 99, 71, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* positioning ---Relative position [absolute] */
-
-/* Second section */
-.second-section {
-    /* margin-top: 40px; */
-    /* border: 3px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    margin: 0 auto;
-    max-width: 1500px;
-}
-
-.secondsection-left {
-    width: 300px;
-    height: 400px;
-    background: #D9D9D9;
-    padding: 40px 25px;
-    text-align: center;
-}
-
-.secondsection-right {
-    margin-left: 10px;
-    width: 320px;
-    height: 460px;
-    background: tomato;
-}
-
-/* 
-h4 {
-    text-align: center;
-} */
-
-p {
-    margin: 10px 0;
-    text-align: left;
-}
-
-/* image reset */
 img {
     width: 100%;
     height: 100%;
 }
 
-/* Third section */
-.thirdsection {
-    background: #D9D9D9;
-    /* border: 3px solid black; */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* ==== Common Fix ends here==== */
+
+
+/* ===== First section starts here===== */
+.firstsection {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1500px;
+    height: 85vh;
+}
+
+.firstsection-leftdiv {
+    padding: 20px;
+    background: var(--gray-color);
+    width: 50%;
+    height: 100%;
+}
+
+.firstsection-rightdiv {
+    background:var(--linear-gradient), url(./images/image1.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.line {
+    background: var(--main-color);
+    height: 16px;
+    width: 224px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.logotext {
+    margin-bottom: 20px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.headingwriteup {
+    margin-bottom: 25px;
+}
+
+.link-holder {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--white-color);
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* ==== First section ends here ==== */
+
+/* ==== Second section starts here ==== */
+
+.secondsection {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 50px 0;
     margin: 0 auto;
     max-width: 1500px;
 }
 
-.thirdsection-left,
-.thirdsection-right {
-    width: 300px;
-    height: 430px;
+.secondsection-leftdiv{
+    width: 310px;
+    height: 400px;
+    background: var(--gray-color);
+    padding: 40px 25px;
 }
 
-.thirdsection-left {
-    background: skyblue;
+.secondsection-rightdiv {
+    margin-left: 20px;
+    width: 340px;
+    height: 460px;
+    background: var(--main-color);
+}
+/* ==== Second section ends here ==== */
+
+/* ==== Third section starts here ==== */
+
+.thirdsection {
+    background: var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 
-.thirdsection-right {
-    background: #FF6347;
+.thirdsection-leftdiv,
+.thirdsection-rightdiv {
+    width: 350px;
+    height: 460px;
+}
+
+.thirdsection-leftdiv{
+    background: url("./images/image3.jpg");
+    background-size: cover;
+}
+
+.thirdsection-rightdiv {
+    background: var(--main-color);
     padding: 30px 25px;
 
 }
 
-/* footer section */
+
+/* ==== Footer section starts here ==== */
+
 .footer {
-    background: #FF6347;
+    background: var(--main-color);
     padding: 20px 0;
-    color: white;
+    flex-wrap: wrap;
+    color: var(--white-color);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -178,40 +147,37 @@ img {
 }
 
 .iconholder {
-    color: white;
-    /* font-size: 40px; */
-}
-
-.icon-method2 {
-    border: 3px solid black;
-    width: 200px;
-}
-
-.method2-iconholder svg {
-    width: 20px;
-    height: 20px;
-    fill: white;
+    color: var(--white-color);
+    margin: 0 5px;
 }
 
 
-/* Monile design --- using media queries */
+/* ==== Footer section ends here ==== */
+
+
+
+
+/* ==== Mobile version --- Using Media Queries ==== */
+
+
 
 @media screen and (max-width:900px) {
 
-    .right-div,
-    .left-div {
-        height: 550px;
+/* ==== First section starts here ==== */
+
+    .firstsection {
+        height: 85vh;
     }
 
-    .left-div {
+    .firstsection-leftdiv {
         width: 60%;
     }
 
-    .right-div {
+    .rfirstsection-rightdiv {
         width: 40%;
     }
 
-    .header-headingtext {
+    .heading {
         font-size: 25px;
     }
 
@@ -219,7 +185,7 @@ img {
         font-size: 16px;
     }
 
-    .smart-line {
+    .line {
         width: 200px;
     }
 
@@ -233,36 +199,42 @@ img {
     .link-holder h4 {
         margin-bottom: 20px;
     }
+/* ==== First section ends here ==== */
 
 
-    /*  second section*/
-    .second-section {
-        flex-direction: column;
-    }
-
-    .secondsection-right {
+/* ==== Second section ends here ==== */
+.secondsection{
+    flex-direction: column;
+}
+    .secondsection-rightdiv {
         margin-left: 0;
         margin-top: 30px;
     }
 
-    /* third section */
+   /* ==== Second section ends here ==== */
+
+
+
+   /* ==== Third section section ends here ==== */
+
     .thirdsection {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .thirdsection-right {
-        margin-bottom: 30px;
-    }
 
-    /*  footer section*/
+
+/* ==== Third section section ends here ==== */
+
+
+/* ==== Footer section starts here ==== */
+
     .footer {
         flex-direction: column;
         padding: 20px 30px;
-    }
-
-    .footer p {
         text-align: center;
     }
+    
+/* ==== Footer section ends here ==== */
 
 }
