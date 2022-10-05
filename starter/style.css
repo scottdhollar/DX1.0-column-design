@@ -19,6 +19,7 @@
     background: var(--gray-color);
 }
 
+span {color: tomato;}
 .firstsection-rightdiv {
     width: 50%;
     height: 100%;
