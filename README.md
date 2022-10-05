@@ -3,7 +3,7 @@
 # DX-Column-Design
 A simple responsive beginner project, A complete guide about how to build this project from scratch is covered in this [Youtube video](https://youtu.be/jz4SY1XyxlI)
 
-## Netlify Link
+## Preview application
 - https://dx1columndesign.netlify.app
 ## Figma Design link
 - https://www.figma.com/file/ufZTvBzIwRwb62WGnLsom5/DX1.0-column-design?node-id=22%3A2
