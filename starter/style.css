@@ -3,12 +3,16 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+}
 /* ==== Common Fix ends here==== */
 
 /* ===== First section starts here===== */
 .firstsection {
     border: 3px solid black;
-    height: 430px;
+    height: 460px;
     display: flex;
 }
 /* ===== First section ends here===== */
@@ -17,13 +21,42 @@
     width: 50%;
     height: 100%;
     background: var(--gray-color);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-span {color: tomato;}
+span {color: var(--main-color);}
 .firstsection-rightdiv {
     width: 50%;
     height: 100%;
     background: var(--linear-gradient), url("./images/image1.jpg");
     background-size: cover;
     background-position: bottom left;
+}
+
+.logotext {
+    margin-bottom: 20px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.line {
+    height: 16px;
+    background: var(--main-color);
+    width: 224px;
+}
+
+.firstsection-leftdiv p{
+    margin-bottom: 20px;
+}
+
+.link-holder {
+    /* border: 3px solid purple; */
+    color: var(--white-color);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
 }
