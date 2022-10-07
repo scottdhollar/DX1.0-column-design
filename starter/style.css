@@ -9,6 +9,11 @@ body {
 }
 /* ==== Common Fix ends here==== */
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 /* ===== First section starts here===== */
 .firstsection {
     /* border: 3px solid black; */
@@ -59,4 +64,37 @@ span {color: var(--main-color);}
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0;
+}   
+
+.secondsection {
+    /* border: 3px solid tomato; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+    flex-wrap: wrap;
+}
+
+.secondsection-leftdiv {
+    height: 400px;
+    width: 310px;
+    /* border: 3px solid purple; */
+    padding: 30px 25px;
+    background: var(--gray-color);
+}
+
+.secondsection-leftdiv h4 {
+    margin-bottom: 20px;
+}
+
+.secondsection-leftdiv p {
+    margin-bottom: 25px;
+}
+
+.secondsection-rightdiv {
+    height: 500px;
+    width: 340px;
+    margin-left: 20px;
 }
