@@ -1,7 +1,7 @@
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width:600px) {
+/* ===== First section starts here===== */
 .firstsection {
-    height: 520px;
+    height:520px;
 }
 
 .firstsection-leftdiv {
@@ -24,19 +24,42 @@
 .heading {
     font-size: 25px;
 }
-
 .firstsection-leftdiv p {
     font-size: 16px;
 }
-
 .line {
     width: 180px;
 }
+/* ===== First section ends here===== */
 
+
+/* ===== Second section starts here===== */
 .secondsection-rightdiv {
-    margin-top: 30px;
     margin-left: 0;
+    margin-top: 30px;
+}
+/* ===== Second section ends here===== */
+
+/* ===== Third section starts here===== */
+.thirdsection {
+    flex-direction: column-reverse;
+    background: var(  --gray-color);
 }
 
+footer {
+    flex-direction: column;
+    padding: 10px 30px;
+    text-align: center;
 }
+
+.footericons-container {
+    margin: 10px 0;
+}
+/* ===== Third section ends here===== */
+
+
+
+
+}
+
 

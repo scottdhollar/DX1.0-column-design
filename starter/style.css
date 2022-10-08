@@ -1,73 +1,71 @@
 /* ==== Common Fix starts here==== */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
 body {
     font-family: 'Inter', sans-serif;
 }
 /* ==== Common Fix ends here==== */
-
 img {
     width: 100%;
-    height: 100%;
+    height: 100%
+    ;
 }
-
 /* ===== First section starts here===== */
 .firstsection {
-    /* border: 3px solid black; */
     height: 460px;
+    /* border: 3px solid orange; */
     display: flex;
+    
 }
-/* ===== First section ends here===== */
-
 .firstsection-leftdiv {
+    padding: 20px;
     width: 50%;
     height: 100%;
     background: var(--gray-color);
-    padding: 20px;
-    box-sizing: border-box;
 }
-
-span {color: var(--main-color);}
 .firstsection-rightdiv {
     width: 50%;
     height: 100%;
-    background: var(--linear-gradient), url("./images/image1.jpg");
+    background:  var(--linear-gradient), url("./images/image1.jpg");
     background-size: cover;
     background-position: bottom left;
 }
-
+span {
+    color: red
+}
 .logotext {
     margin-bottom: 20px;
 }
-
 .heading {
     margin-bottom: 20px;
 }
-
 .line {
     height: 16px;
-    background: var(--main-color);
+    background: var( --main-color);
     width: 224px;
 }
 
-.firstsection-leftdiv p{
-    margin-bottom: 20px;
+.firstsection-leftdiv p {
+    margin-bottom: 25px;
 }
 
 .link-holder {
     /* border: 3px solid purple; */
-    color: var(--white-color);
-    text-transform: capitalize;
+    color: var( --white-color);
+    text-transform: uppercase;
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0;
-}   
+}
 
+/* ===== First section starts here===== */
+
+/* ===== Second section starts here===== */
 .secondsection {
-    /* border: 3px solid tomato; */
+    /* border: 3px solid cadetblue; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,25 +74,119 @@ span {color: var(--main-color);}
 
     flex-wrap: wrap;
 }
-
 .secondsection-leftdiv {
     height: 400px;
     width: 310px;
-    /* border: 3px solid purple; */
-    padding: 30px 25px;
+    /* border: 3px solid red; */
     background: var(--gray-color);
+    padding: 30px 25px;
 }
-
 .secondsection-leftdiv h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.secondsection-leftdiv p {
     margin-bottom: 20px;
 }
+.secondsection-rightdiv {
+    height: 460px;
+    width: 340px;
+    /* border: 3px solid goldenrod; */
+    margin-left: 20px;
+    /* background: url(./images/image2.jpg);
+    background-size: cover;
+    background-position: bottom right; */
+}
 
-.secondsection-leftdiv p {
+/* ===== Second section ends here===== */
+
+
+/* ===== Third section starts here===== */
+.thirdsection{
+    /* background: var( --gray-color); */
+    /* width: 794px; */
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+.thirdsection-leftdiv{
+    height: 460px;
+    width: 340px;
+    /* border: 3px solid greenyellow; */
+    background: url(./images/image3.jpg);
+    background-size: cover;
+    /* background-position: bottom left; */
+}
+.thirdsection-rightdiv {
+    height: 460px;
+    width: 340px;
+    /* border: 3px solid black; */
+    background: var( --main-color);
+    padding: 30px 20px;
+}
+.thirdsection-rightdiv p {
     margin-bottom: 25px;
 }
+/* ===== Third section starts here===== */
 
-.secondsection-rightdiv {
-    height: 500px;
-    width: 340px;
-    margin-left: 20px;
+/* footer{
+  
+    background: var(--main-color);
+    color: white;
+   align-items: center;
+    padding: 10px 0;
+} */
+
+/* ===== footer starts here===== */
+footer{
+    border: 3px solid tomato;
+    background: var(--main-color);
+    color: var(--white-color);
+    align-items: center;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+
+.footericons-container {
+    /* width: 200px; */
+    /* border: 3px solid black; */
+    font-size: 22px;
+}
+
+.footer-icon {
+    margin: 0 5px;
+}
+
+a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.support {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.supportme {
+    font-size: 200%;
+}
+
+/* safety mesures starts here */
+.firstsection, .secondsection, .thirdsection, footer {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* safety mesures ends here */
+
+
+/* ===== footer ends here===== */
+
+/* ===== Third section ends here===== */
