@@ -1,7 +1,12 @@
 @media screen and (max-width:600px) {
 /* ===== First section starts here===== */
-.firstsection {
+/* #header {
+height: 100px;
+} */
+
+#firstsection {
     height:520px;
+    padding-top: 50px;
 }
 
 .firstsection-leftdiv {
@@ -12,10 +17,10 @@
     width: 40%;
 }
 
-.link-holder {
+/* .link-holder {
     flex-direction: column;
     padding-left: 40px;
-}
+} */
 
 .link-holder h4 {
     margin-bottom: 20px;
@@ -52,7 +57,7 @@ footer {
     text-align: center;
 }
 
-.footericons-container {
+#footericons-container {
     margin: 10px 0;
 }
 /* ===== Third section ends here===== */

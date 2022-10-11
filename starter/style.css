@@ -14,7 +14,7 @@ img {
     ;
 }
 /* ===== First section starts here===== */
-.firstsection {
+#firstsection {
     height: 460px;
     /* border: 3px solid orange; */
     display: flex;
@@ -52,9 +52,15 @@ span {
     margin-bottom: 25px;
 }
 
+#header {
+    position: fixed;
+    width: 100%;
+}
+
 .link-holder {
-    /* border: 3px solid purple; */
-    color: var( --white-color);
+    /* border: 3px solid black; */
+    background: var(--main-color);
+    color: var(--white-color);
     text-transform: uppercase;
     display: flex;
     justify-content: space-evenly;
@@ -64,7 +70,7 @@ span {
 /* ===== First section starts here===== */
 
 /* ===== Second section starts here===== */
-.secondsection {
+#secondsection {
     /* border: 3px solid cadetblue; */
     display: flex;
     flex-direction: row;
@@ -154,7 +160,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.footericons-container {
+#footericons-container {
     /* width: 200px; */
     /* border: 3px solid black; */
     font-size: 22px;
